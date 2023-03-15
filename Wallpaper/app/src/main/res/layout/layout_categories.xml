@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipToPadding="false"
+    android:overScrollMode="never"
+    android:padding="8dp"
+    android:scrollbars="none">
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/categories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:selectionRequired="true"
+        app:singleSelection="true">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/nature"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:fontFamily="@font/ubuntu_regular"
+            android:includeFontPadding="false"
+            android:text="Nature"
+            android:textColor="@color/text_color"
+            android:textSize="12sp"
+            app:chipBackgroundColor="@color/background_color" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/woman"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu_regular"
+            android:includeFontPadding="false"
+            android:text="Woman"
+            android:textColor="@color/text_color"
+            android:textSize="12sp"
+            app:chipBackgroundColor="@color/background_color" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/four_k"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu_regular"
+            android:includeFontPadding="false"
+            android:text="4K"
+            android:textColor="@color/text_color"
+            android:textSize="12sp"
+            app:chipBackgroundColor="@color/background_color" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/animals"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu_regular"
+            android:includeFontPadding="false"
+            android:text="Animals"
+            android:textColor="@color/text_color"
+            android:textSize="12sp"
+            app:chipBackgroundColor="@color/background_color" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/fashion"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu_regular"
+            android:includeFontPadding="false"
+            android:text="Fashion"
+            android:textColor="@color/text_color"
+            android:textSize="12sp"
+            app:chipBackgroundColor="@color/background_color" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/beauty"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu_regular"
+            android:includeFontPadding="false"
+            android:text="Beauty"
+            android:textColor="@color/text_color"
+            android:textSize="12sp"
+            app:chipBackgroundColor="@color/background_color" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/flowers"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu_regular"
+            android:includeFontPadding="false"
+            android:text="Flowers"
+            android:textColor="@color/text_color"
+            android:textSize="12sp"
+            app:chipBackgroundColor="@color/background_color" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/cars"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu_regular"
+            android:includeFontPadding="false"
+            android:text="Cars"
+            android:textColor="@color/text_color"
+            android:textSize="12sp"
+            app:chipBackgroundColor="@color/background_color" />
+    </com.google.android.material.chip.ChipGroup>
+</HorizontalScrollView>

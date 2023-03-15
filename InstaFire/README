@@ -1,0 +1,9 @@
+The Firebase authentication process has changed and now differs from Rahul's instructions.
+
+The instructions are so difficult I can't follow them and I have to give up here.
+Instructions:
+Menu - Tools - Firebase
+Under Authentication, select "Authenticate using Google [KOTLIN]"
+I'm stuck at Step 4: Integrate Google sign-in into your app
+
+Rahul: https://youtu.be/NVXQfzed2fc?list=PL7NYbSE8uaBDFULNYVBV8kCyaG6OyMeaq&t=420

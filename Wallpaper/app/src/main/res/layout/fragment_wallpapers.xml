@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/wallpapers_header"
+        android:layout_width="match_parent"
+        android:layout_height="94dp"
+        android:background="@color/primary"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_wallpaper"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_search"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="@font/ubuntu_bold"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:text="Wallpapers"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/back"
+            app:layout_constraintEnd_toStartOf="@+id/search"
+            app:layout_constraintStart_toEndOf="@+id/back"
+            app:layout_constraintTop_toTopOf="@+id/back" />
+
+        <include
+            android:id="@+id/layout"
+            layout="@layout/layout_categories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/back"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/wallpapers_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:padding="1dp"
+        android:scrollbars="none"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/wallpapers_header"
+        app:spanCount="3" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,6 @@
+At minute 21 of video 3 but the app crashes with error:
+java.util.concurrent.ExecutionException: java.lang.SecurityException: GoogleCertificatesRslt: not allowed: pkg=com.rahulpandey.maps, sha256=[289c23ec84e722b4212f390897bbf2e39389c82eadfc269547cea7cbd644d5ee], atk=true, ver=223017044.true (go/gsrlt)
+
+https://youtu.be/r-OoaF9tJCg?list=PL7NYbSE8uaBCSkZum6Z88RvjiXrTBpjT2&t=1002
+
+Have tried googling for a solution to no avail.
